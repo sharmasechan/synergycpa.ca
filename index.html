@@ -1,59 +1,61 @@
-<!doctype html>
-<html lang="en-CA">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Synergy CPA Professional Corp. — Work in Progress</title>
-  <!-- keep staging private from search engines -->
+  <!-- Keep search engines from indexing -->
   <meta name="robots" content="noindex, nofollow">
   <style>
-    :root{
-      --bg:#f8fafc;      /* light neutral background */
-      --panel:#ffffff;   /* card background */
-      --ink:#0b1220;     /* text color */
-      --muted:#64748b;   /* muted text */
-      --border:#e2e8f0;  /* subtle border */
-      --shadow:0 20px 60px rgba(2,6,23,.08);
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* plain white */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0}
-    body{
-      display:grid;place-items:center;
-      background:var(--bg); color:var(--ink);
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+    .container {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
     }
-    .card{
-      width:min(92vw,720px);
-      background:var(--panel);
-      border:1px solid var(--border);
-      border-radius:20px;
-      box-shadow:var(--shadow);
-      padding:36px 28px;
-      text-align:center;
-      animation: fadeUp .6s ease-out both;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    @keyframes fadeUp{
-      from{opacity:0; transform:translateY(8px)}
-      to{opacity:1; transform:translateY(0)}
+    .logo {
+      width: 320px; /* big logo */
+      height: auto;
+      margin-bottom: 20px;
+      background: none; /* remove any gradient behind logo */
     }
-    .logo{
-      width:320px; /* BIG logo */
-      height:auto;
-      margin:0 auto 16px;
-      display:block;
-      filter: drop-shadow(0 6px 18px rgba(0,0,0,.15));
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #0F766E; /* bluish green brand color */
     }
-    h1{margin:6px 0 8px;font-size:clamp(24px,4vw,32px)}
-    p{margin:0;color:var(--muted);font-size:16px}
-    .pill{
-      display:inline-block;margin:6px 0 12px;
-      padding:6px 14px;border-radius:999px;
-      background:#eef2ff;border:1px solid #c7d2fe;
-      font-weight:700;color:#334155
+    p {
+      font-size: 1rem;
+      color: #555;
     }
-    .footer{margin-top:14px;font-size:13px;color:#94a3b8}
-    a{color:#2563eb;text-decoration:none} a:hover{text-decoration:underline}
   </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Synergy CPA Logo" class="logo">
+    <h1>🚧 Work in Progress 🚧</h1>
+    <p>Our website is under construction. Please check back soon.</p>
+  </div>
+</body>
+</html>
+
 </head>
 <body>
   <main class="card" role="main" aria-label="Work in progress">
