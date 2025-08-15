@@ -43,9 +43,17 @@
       display:block;
       filter: drop-shadow(0 6px 18px rgba(0,0,0,.15));
     }
-    h1{margin:6px 0 8px;font-size:cl
-
-
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-</body>
-</html>
+    h1{margin:6px 0 8px;font-size:clamp(24px,4vw,32px)}
+    p{margin:0;color:var(--muted);font-size:16px}
+    .pill{
+      display:inline-block;margin:6px 0 12px;
+      padding:6px 14px;border-radius:999px;
+      background:#eef2ff;border:1px solid #c7d2fe;
+      font-weight:700;color:#334155
+    }
+    .footer{margin-top:14px;font-size:13px;color:#94a3b8}
+    a{color:#2563eb;text-decoration:none} a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-label="Work in progress">
