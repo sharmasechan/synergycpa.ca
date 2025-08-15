@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.synergycpa.example/sitemap.xml
+Sitemap: https://thesynergycpa.ca/sitemap.xml
