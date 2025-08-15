@@ -1,70 +1,48 @@
-<!doctype html>
-<html lang="en-CA">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Synergy CPA Professional Corp. — Work in Progress</title>
-  <!-- keep WIP private from search engines -->
-  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work in Progress - Synergy CPA</title>
   <style>
-    :root{
-      --bg1:#0f172a;          /* deep navy */
-      --bg2:#111827;          /* slate/charcoal */
-      --panel:#0b1220;        /* card bg */
-      --text:#e5e7eb;         /* light text */
-      --muted:#94a3b8;        /* muted text */
-      --ring:rgba(37,99,235,.35);
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #0F766E, #A3E635);
+      color: white;
+      text-align: center;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0}
-    body{
-      display:grid;place-items:center;
-      background:
-        radial-gradient(1000px 400px at 50% -10%, rgba(37,99,235,.18), transparent 60%),
-        linear-gradient(180deg, var(--bg1), var(--bg2));
-      color:var(--text);
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+    .logo {
+      width: 320px; /* Big logo */
+      height: auto;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
     }
-    .card{
-      width:min(92vw,720px);
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      border:1px solid rgba(148,163,184,.25);
-      border-radius:20px;
-      box-shadow: 0 18px 60px rgba(2,6,23,.45);
-      padding:32px 24px;
-      text-align:center;
-      animation: fadeUp .7s ease-out both;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #fff; /* White for contrast */
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     }
-    @keyframes fadeUp{
-      from{opacity:0; transform: translateY(8px)}
-      to{opacity:1; transform: translateY(0)}
+    p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     }
-    .logo{width:120px;height:auto;margin:0 auto 16px;display:block;filter: drop-shadow(0 6px 22px rgba(0,0,0,.35))}
-    h1{margin:0 0 6px;font-size:clamp(24px,4vw,36px)}
-    p.muted{margin:6px 0 16px;color:var(--muted)}
-    .pill{
-      display:inline-block;
-      padding:6px 12px;border-radius:999px;
-      background:rgba(37,99,235,.12);border:1px solid var(--ring);
-      color:#cbd5e1;font-weight:600
-    }
-    .footer{margin-top:18px;font-size:13px;color:#94a3b8}
-    a{color:#93c5fd;text-decoration:none} a:hover{text-decoration:underline}
   </style>
 </head>
 <body>
-  <main class="card" role="main" aria-label="Work in progress">
-    <!-- If your logo is named differently, change the src below -->
-    <img src="Synergy CPA Logo_3_Final.png" alt="Synergy CPA logo" class="logo" onerror="this.style.display='none'">
-    <h1>Synergy CPA Professional Corp.</h1>
-    <p class="muted">Our website is under construction. We’ll be live soon.</p>
-    <div class="pill">Work in Progress</div>
-    <div class="footer">
-      Partner: Santosh Lamicchane, CPA, CGA, FCCA<br>
-      Need to reach us? <a href="mailto:hello@thesynergycpa.ca">hello@thesynergycpa.ca</a><br>
-      © <span id="y"></span> Synergy CPA Professional Corp.
-    </div>
-  </main>
+  <img src="logo.png" alt="Synergy CPA Logo" class="logo">
+  <h1>🚧 Work in Progress 🚧</h1>
+  <p>Our website is under construction. Please check back soon.</p>
+</body>
+</html>
+
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
