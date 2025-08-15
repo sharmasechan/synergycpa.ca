@@ -1,47 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-CA">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work in Progress - Synergy CPA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Synergy CPA Professional Corp. — Work in Progress</title>
+  <!-- keep staging private from search engines -->
+  <meta name="robots" content="noindex, nofollow">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background: linear-gradient(135deg, #0F766E, #A3E635);
-      color: white;
-      text-align: center;
+    :root{
+      --bg:#f8fafc;      /* light neutral background */
+      --panel:#ffffff;   /* card background */
+      --ink:#0b1220;     /* text color */
+      --muted:#64748b;   /* muted text */
+      --border:#e2e8f0;  /* subtle border */
+      --shadow:0 20px 60px rgba(2,6,23,.08);
     }
-    .logo {
-      width: 320px; /* Big logo */
-      height: auto;
-      margin-bottom: 20px;
-      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      display:grid;place-items:center;
+      background:var(--bg); color:var(--ink);
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #fff; /* White for contrast */
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    .card{
+      width:min(92vw,720px);
+      background:var(--panel);
+      border:1px solid var(--border);
+      border-radius:20px;
+      box-shadow:var(--shadow);
+      padding:36px 28px;
+      text-align:center;
+      animation: fadeUp .6s ease-out both;
     }
-    p {
-      font-size: 1.2rem;
-      color: #f0f0f0;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    @keyframes fadeUp{
+      from{opacity:0; transform:translateY(8px)}
+      to{opacity:1; transform:translateY(0)}
     }
-  </style>
-</head>
-<body>
-  <img src="logo.png" alt="Synergy CPA Logo" class="logo">
-  <h1>🚧 Work in Progress 🚧</h1>
-  <p>Our website is under construction. Please check back soon.</p>
-</body>
-</html>
+    .logo{
+      width:320px; /* BIG logo */
+      height:auto;
+      margin:0 auto 16px;
+      display:block;
+      filter: drop-shadow(0 6px 18px rgba(0,0,0,.15));
+    }
+    h1{margin:6px 0 8px;font-size:cl
+
 
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
