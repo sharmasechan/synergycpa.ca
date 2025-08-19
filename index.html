@@ -3,59 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Synergy CPA Professional Corp. — Work in Progress</title>
-  <!-- Keep search engines from indexing -->
-  <meta name="robots" content="noindex, nofollow">
+  <title>Synergy CPA Professional Corp.</title>
   <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       font-family: Arial, sans-serif;
-      background-color: #ffffff; /* plain white */
-      margin: 0;
-      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-    }
-    .container {
       text-align: center;
-      background-color: #ffffff;
+      color: #333;
+      animation: fadeIn 2s ease-in;
+      background: linear-gradient(-45deg, #006d5b, #009688, #f4d35e, #006d5b);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite, fadeIn 2s ease-in;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .card {
+      background: #fff;
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      opacity: 0;
-      animation: fadeIn 1s ease-in-out forwards;
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+      max-width: 450px;
+      animation: fadeIn 2s ease-in;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+
     .logo {
-      width: 320px; /* big logo */
-      height: auto;
+      max-width: 250px;
       margin-bottom: 20px;
-      background: none; /* remove any gradient behind logo */
     }
+
     h1 {
-      font-size: 2rem;
+      font-size: 1.8em;
       margin-bottom: 10px;
-      color: #0F766E; /* bluish green brand color */
+      color: #006d5b;
     }
+
     p {
-      font-size: 1rem;
+      font-size: 1em;
       color: #555;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="card">
     <img src="logo.png" alt="Synergy CPA Logo" class="logo">
     <h1>🚧 Work in Progress 🚧</h1>
     <p>Our website is under construction. Please check back soon.</p>
   </div>
 </body>
 </html>
-
 </head>
 <body>
   <main class="card" role="main" aria-label="Work in progress">
